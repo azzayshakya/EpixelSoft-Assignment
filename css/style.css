@@ -1,0 +1,955 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.menu-button{
+    display: none;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #fff;
+    color: black;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    /* border: 2px red solid; */
+}
+
+.logo {
+    /* display: flex;
+    align-items: center; */
+    background-image: url("../images/Sample\ Logo\ Head.png");
+    width: 122px;
+    height: 32px;
+}
+
+
+
+.centerElementsOfNavbar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.centerElementsOfNavbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.centerElementsOfNavbar ul li {
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.centerElementsOfNavbar ul li:hover {
+    color:#18A0FB;
+    transform: translateY(-5px);
+}
+
+.rightSideOfNavbar button {
+    background-color: #18A0FB;
+    /* width: 130px; */
+    height: 40px;
+    
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    /* border: 1px #18A0FB solid; */
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.rightSideOfNavbar .firstButton{
+
+    background-color: #fff;
+    
+    color: #18A0FB;
+    border: 1px #18A0FB solid;
+    /* border: none; */
+
+}
+
+.rightSideOfNavbar button:hover {
+    /* color:#18A0FB; */
+    transform: translateY(-5px);
+}
+.ScreenFirst {
+    
+    background-image: url(../images/scott-graham-5fNmWej4tAA-unsplash\ 1@2x.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 450px;
+    width: 100%; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* display: none; */
+
+   
+}
+
+.ScreenFirst::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1; 
+}
+
+.ScreenFirst p, .ScreenFirst button {
+    position: relative;
+    z-index: 2; 
+}
+
+.ScreenFirst p {
+    font-weight: 400;
+    font-size: clamp(24px, 5vw + 20px, 56px);
+    line-height: 1.2em; 
+    letter-spacing: -1.5%;
+    text-align: center;
+    /* margin-top: 200px; */
+    color: #FFFFFF; 
+}
+
+
+.ScreenFirst button {
+    font-size: 18px;
+    padding: 12px 24px;
+    margin-top: 20px;
+    background-color: #18A0FB;
+    color: #FFFFFF; 
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 192px;
+    height: 52px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+/*  */
+
+.PhaseTwo{
+    /* display: none; */
+    width: 100%;
+    min-height:500px;
+    /* border: 2px solid blue; */
+    background-color: #FFFFFF;
+    padding: 40px 70px;
+    box-sizing: border-box;
+    /* background: #FFFFFF; */
+
+}
+.PhaseTwo .PhaseTwoTop{
+    
+    /* border: 2px red solid; */
+    min-width: 144px;
+    max-width: 750px;
+    font-size: clamp(28px, 5vw, 48px);
+    font-weight: 600;
+    /* padding: 10px 50px; */
+    /* margin-left: 20px; */
+  
+    color: #000000;
+    
+}
+.PhaseTwoBottom{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-wrap: wrap;
+    /* gap: 20px; */
+    /* border: 2px red solid; */
+
+}
+
+.PhaseTwoBottomLeft{
+    width: 50%;
+    /* border: 2px green solid; */
+
+   
+}
+.PhaseTwoBottomRight{
+    /* border: 2px green solid; */
+    width: 50%;
+   
+}
+.PhaseTwo .PhaseTwoBottom .infoBox{
+    /* border: 12px red solid; */
+    /* min-height: 200px; */
+    /* border: 2px red solid; */
+
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: space-between; */
+    
+}
+
+.PhaseTwo .PhaseTwoBottom span{
+    font-weight: 700;
+    font-size: 24px;
+    
+
+}
+.PhaseTwo .PhaseTwoBottom p{
+    font-weight: 100;
+    font-size:13px;
+    padding: 20px 20px 20px 0px;
+
+}
+.PhaseTwoBottom button{
+    background-color: #18A0FB;
+    border: 1px #18A0FB solid;
+    color: white;
+    width: 90px;
+    height: 29px;
+    border-radius:0px ;
+    /* font-weight: 500; */
+    /* font-size: 15px; */
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+/*  */
+
+.PhaseThree{
+    /* display: none; */
+    width: 100%;
+    min-height: 700px;
+    margin-top: 50px;
+    background-color: #FFFFFF;
+    /* border: 1px red solid; */
+
+}
+.PhaseThreeTop{
+    /* border: 1px red solid; */
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+.PhaseThreeTop p{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px;
+
+}
+.PhaseThreeTop span{
+    font-weight: 100;
+    font-size: 20px;
+    margin: 20px;
+
+}
+.PhaseThreeBottom{
+    display: flex;
+    /* align-items: center; */
+    padding: 40px 20px;
+    
+    /* border: 2px blue solid; */
+
+}
+.PhaseThreeBottomLeft{
+    /* border: 1px red solid; */
+    min-height: 200px;
+    width: 48%;
+    padding: 10px 50px;
+}
+.PhaseThreeBottomLeft p{
+    font-weight: 700;
+    font-size: 24px;
+    margin:50px 0px;
+}
+.PhaseThreeBottomLeft span{
+    font-size:18px;
+    font-weight: 100;
+    background-color: #000000 80%;
+}
+
+.PhaseThreeBottomRight{
+    /* border: 1px red solid; */
+    min-height:600px;
+    width: 48%;
+    padding: 10px 50px;
+    background-image: url("../images/sean-pollock-PhYq704ffdA-unsplash\ 1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+/*  */
+.PhaseFour{
+    /* display: none; */
+    margin-top: 50px;
+    background-color: #FFFFFF;
+    min-height: 550px;
+    /* border: 2px red solid; */
+    box-sizing: border-box;
+}
+
+.PhaseFourTop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+
+}
+.PhaseFourTop p{
+    font-size: clamp(24px, 5vw, 30px);
+    font-weight: 600;
+    margin: 20px;
+
+
+}
+.PhaseFourTop span{
+    font-weight: 100;
+    font-size: clamp(16px, 4vw, 20px); 
+    margin: 20px;
+}
+.PhaseFourBottom {
+    /* border: 2px red solid; */
+    /* height: 300px;  */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    gap: 20px; 
+    padding: 0px 20px;
+} 
+.PhaseFourBottom  .PhaseFourBoxes{
+    /* border: 2px blue solid; */
+    /* display: flex; */
+    width:300px;
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    border: 1px #CCCCCC solid;
+    transition: transform 0.3s ease;
+
+
+
+}
+.PhaseFourBottom .PhaseFourBoxes:hover {
+    transform: scale(1.05);
+}
+.PhaseFourBoxes .PhaseFourImage{
+    background-image: url("../images/1.png");
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.PhaseFourBoxes .PhaseFourImage2{
+    background-image: url("../images/2.png");
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+.PhaseFourBoxes .PhaseFourImage3{
+    background-image: url("../images/3.png");
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.PhaseFourBoxes p{
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-left: 30px; 
+}
+
+
+.PhaseFourBoxes span{
+    font-weight: 100;
+    font-size: 15px;
+    padding: 10px 30px 30px 30px;
+    
+}
+
+
+
+/*  */
+.PhaseFive{
+    margin-top: 50px;
+    background-color: #FFFFFF;
+    min-height: 600px;
+    /* border: 2px red solid; */
+    /* display: none; */
+}
+.PhaseFiveTop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.PhaseFiveTop p{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px;
+    
+}
+.PhaseFiveTop span{
+    font-size:18px;
+    font-weight: 100;
+    background-color: #000000 80%;
+    
+}
+.signupForm{
+    border: 1px solid #CCCCCC;
+    width: 400px;
+    padding: 20px;
+    margin: 50px auto;
+    /* border: 2px red solid; */
+    margin-bottom: 50px;
+
+
+}
+.signupForm p{
+    /* text-align: center; */
+    font-weight: 700;
+    margin: 20px 0px ;
+    font-size: 20px;
+    /* border: 2px red solid; */
+
+}
+.signupForm .row {
+    /* border: 2px red solid; */
+}
+.signupForm .row input{
+
+    max-width:47% ;
+    height: 30px;
+    /* margin: 10px 10px ; */
+    padding: 10px 10px;
+    margin: 10px 0px;
+    border: 1px #C4C4C4 solid;
+}
+.signupForm .row .activeInput{
+    margin-left: 0px;
+    /* border: 2px blue solid; */
+    /* margin: ; */
+}
+.signupForm .row  .sec_input{
+    border: 1px #C4C4C4 solid;
+    margin-left: 17px;
+
+}
+
+.signupForm  .InlineInput input{
+    border: 1px #C4C4C4 solid;
+
+    width:100% ;
+    height: 30px;
+    margin: 10px 0px ;
+    padding: 0px 10px;
+    /* border: 2px green solid; */
+    text-align: center;
+
+}
+.signupForm .button{
+    width: 100%;
+}
+.signupForm button{
+    min-width:100px ;
+    height: 30px;
+    /* margin: 10px 10px ; */
+    padding: 0px 0px;
+    margin-top: 10px;
+    background-color: #18A0FB;
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 6px;
+
+
+}
+.footer{
+    min-width:200px;
+    background-color: #000000cc;
+    color: white;
+
+    padding: 20px 40px;
+    box-sizing: border-box;
+    
+}
+
+.footer .footerTop{
+    display: flex;
+    padding: 20px 0px 0px 0px;
+    width: 100%;
+    display: flex;
+    /* border: 2px red solid; */
+    flex-wrap: wrap;
+
+
+}
+.footer  .leftside{
+    width: 60%;
+    flex: 1;
+    /* border: 2px red solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   
+}
+.leftside .logoImageAtFooter{
+    background-image: url("../images/Sample\ Logo.png");
+    width:122.07px;
+    height: 32px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.footer .footerTop .centerSide{
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    flex: 2;
+    flex-wrap: wrap;
+}
+.footer .footerTop .centerSide div{
+    /* border: 1px red solid; */
+    height: 150px;
+    width: 120px;
+    margin: 0px 20px;
+
+}
+.footer .footerTop .rightSide{
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+.footer .footerTop .ActiveAtFooter{
+    font-weight: 700;
+    margin-bottom: 25px;
+    margin-top: 0px;
+    color: #FFFFFF;
+    z-index: 1;   
+}
+
+.footer .footerTop p{
+    color: #FFFFFFCC;
+    margin: 8px;
+    
+}
+
+.footer .footerTop .rightSide button{
+    width: 100px;
+    height: 33px;
+    border-radius:6px ;
+
+    margin-bottom:20px ;
+    background-color: #18A0FB;
+    color: #ffffff;
+    border: none;
+
+}
+
+.footer .footerTop .rightSide .loginbutton{
+    border: 2px #18A0FB solid;
+    background-color: #ffffff;
+    color: #18A0FB;
+    z-index: 1;
+    
+}
+.footer .footerBottom{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin: 0px 0px;
+    border-top: 1px #FFFFFFCC solid;
+    padding-top: 10px;
+    /* padding-bottom: 30px; */
+    
+}
+
+.footer .footerBottom p{
+
+font-size: 15px;
+font-weight: 400;
+
+}
+.footer .footerBottom .socialAccounts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+
+
+}
+.footer .footerBottom .socialAccounts .socialAccountsImages{
+    display: flex;
+
+}
+.footer .footerBottom .socialAccounts span{
+
+}
+
+.footer .footerBottom .socialAccounts p{
+    margin:0px 10px ;
+    border-radius: 50%;
+    background-color:#4B4B4B;
+    height: 50px;
+    width: 50px;
+    flex-wrap: wrap;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+
+}
+.footer .footerBottom .socialAccounts i {
+    color: white; 
+    font-size: 20px; 
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        height: 100%;
+        flex-direction: column;
+        justify-content:space-around;
+        /* background-color: rgba(51, 51, 51, 0.9); */
+        background-color: #fff;
+        color: black;
+        width: 200px;
+        transition: left 0.3s ease-in-out;
+        z-index: 10;
+        
+    }
+
+
+    .navbar.active {
+        left: 0;
+    }
+
+    .menu-button {
+        display: block;
+        /* background-color: #333; */
+        background-color: #fff;
+    
+        color: #18A0FB;
+        border: 1px #18A0FB solid;
+        /* color: #fff; */
+        /* border: none; */
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 20;
+    }
+
+    .logo {
+        position: relative;
+        left: -20px;
+        top: 10px;
+       
+
+       
+    }
+   
+    
+    .centerElementsOfNavbar ul {
+        flex-direction: column;
+        align-items: center;
+        /* border: 2px red solid; */
+        position: relative;
+        left: -50px;
+        top: -30px;
+    }
+
+
+    .centerElementsOfNavbar ul li {
+        /* margin: 15px 0; */
+    }
+
+    .rightSideOfNavbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        left: -50px;
+        top: 0px;
+        margin-top: 80px;
+
+    }
+
+    .rightSideOfNavbar button {
+        padding: 8px 15px;
+        font-size: 14px;
+        margin-top: 10px;
+        /* width: 130px; */
+    }
+}
+
+
+@media (max-width: 480px) {
+    .centerElementsOfNavbar ul li {
+        font-size: 14px;
+    }
+
+    .rightSideOfNavbar button {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .PhaseTwoBottomLeft, .PhaseTwoBottomRight {
+        width: 100%; 
+        padding: 10px;
+    }
+
+    .PhaseTwoBottom {
+        flex-direction: column; 
+    }
+
+    .PhaseTwo .PhaseTwoTop {
+        font-size: clamp(22px, 6vw, 32px); 
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .PhaseTwo .PhaseTwoTop {
+        padding: 10px 20px; 
+    }
+
+    .PhaseTwoBottom .infoBox {
+        padding: 15px; 
+    }
+
+    .PhaseTwoBottom button {
+        width: 100px; 
+        height: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .PhaseTwoBottomLeft, .PhaseTwoBottomRight {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .PhaseTwoBottom {
+        flex-direction: column;
+    }
+
+    .PhaseTwo .PhaseTwoTop {
+        font-size: clamp(22px, 6vw, 32px); 
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .PhaseTwo .PhaseTwoTop {
+        padding: 10px 20px; 
+    }
+
+    .PhaseTwoBottom .infoBox {
+        padding: 15px; 
+    }
+
+    .PhaseTwoBottom button {
+        width: 100px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .PhaseThreeBottom {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .PhaseThreeBottomLeft, 
+    .PhaseThreeBottomRight {
+        width: 100%;
+        padding: 10px 20px; 
+    }
+
+    .PhaseThreeBottomRight {
+        min-height: 400px; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .PhaseThreeTop p {
+        font-size: clamp(18px, 5vw, 26px); 
+    }
+
+    .PhaseThreeTop span {
+        font-size: clamp(14px, 4vw, 18px); 
+    }
+
+    .PhaseThreeBottomLeft p {
+        font-size: clamp(16px, 5vw, 22px); 
+    }
+
+    .PhaseThreeBottomLeft span {
+        font-size: clamp(12px, 4vw, 16px);
+    }
+}
+@media (max-width: 768px) {
+    .PhaseFourBottom {
+        justify-content: center; 
+    }
+
+    .PhaseFourBottom .PhaseFourBoxes {
+        width: 100%; 
+        max-width: 500px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .PhaseFourTop p {
+        font-size: clamp(20px, 5vw, 26px); 
+    }
+
+    .PhaseFourTop span {
+        font-size: clamp(14px, 4vw, 18px); 
+    }
+
+    .PhaseFourBoxes p {
+        font-size: clamp(16px, 5vw, 18px); 
+    }
+
+    .PhaseFourBoxes span {
+        font-size: clamp(10px, 4vw, 14px); 
+    }
+}
+
+@media (max-width:768px) {
+    .signupForm {
+        width: 90%; 
+    }
+
+    .signupForm .row input {
+        width: 100%; 
+        margin-bottom: 10px;
+    }
+
+    .signupForm button {
+        width: 100%; 
+    }
+    
+}
+@media (max-width:768px) {
+    .signupForm .row  .sec_input{
+        border: 1px #C4C4C4 solid;
+        margin-left: 7px;
+    
+    }
+
+}
+
+@media (max-width: 768px) {
+    .footer .footerTop .leftside .logoImageAtFooter{
+    margin-bottom: 40px;
+    }
+    .footer .footerTop {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    
+    }
+    
+    .footer .footerTop .centerSide {
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .footer .footerTop .rightSide {
+        align-items: center;
+    }
+    
+    .footer .footerBottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer .footerBottom .socialAccounts {
+        margin-top: 10px;
+    }
+    
+}
+@media (max-width: 533px) {
+    .footer .footerBottom .socialAccounts .followUs{
+        /* display: flex; */
+        margin-top: 20px;
+    
+    }
+    .footer .footerBottom .socialAccounts .socialAccountsImages{
+        display: flex;
+        margin-top: 20px;
+    
+    }
+
+}
